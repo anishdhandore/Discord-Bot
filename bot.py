@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import random
 from messages import *
+from keys import *
 
 # bot = commands.Bot(command_prefix='.')
 
@@ -35,5 +36,5 @@ async def ping(ctx):
 async def clear(ctx, amount=5):
     await ctx.channel.purge(limit=amount)
 
-client.run("NzY4NDk4NTIwNDc0MjU1Mzgx.X5BWBQ.lswZPYzR1vlghbIT063S2WQeiHE")
+client.run(TOKEN)
 # bot.run("NzY4NDk4NTIwNDc0MjU1Mzgx.X5BWBQ.lswZPYzR1vlghbIT063S2WQeiHE")
